@@ -1,0 +1,852 @@
+[DEBUG] [2021-05-22 13:33] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 13:33] ==> Parameters: 
+[TRACE] [2021-05-22 13:33] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 13:33] <==        Row: 1, test11@test.co.kr, angel777, 이민정, 2021-05-22 12:33:03.0
+[TRACE] [2021-05-22 13:33] <==        Row: 2, minruki512@gmail.com, angel777, Minjoung Lee, 2021-05-22 12:46:12.0
+[TRACE] [2021-05-22 13:33] <==        Row: 3, min@naver.com, angel777, lee, 2021-05-22 12:58:28.0
+[DEBUG] [2021-05-22 13:33] <==      Total: 3
+[DEBUG] [2021-05-22 13:33] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 13:33] ==> Parameters: min2@naver.com(String), 123123(String), testtest(String), null
+[DEBUG] [2021-05-22 13:33] <==    Updates: 1
+[DEBUG] [2021-05-22 13:33] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 13:33] ==> Parameters: min2@naver.com(String)
+[TRACE] [2021-05-22 13:33] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 13:33] <==        Row: 4, min2@naver.com, 123123, testtest, null
+[DEBUG] [2021-05-22 13:33] <==      Total: 1
+[DEBUG] [2021-05-22 13:33] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 13:33] ==> Parameters: 1111111(String), 123456(String), min2@naver.com(String)
+[DEBUG] [2021-05-22 13:33] <==    Updates: 1
+[DEBUG] [2021-05-22 13:33] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 13:33] ==> Parameters: min2@naver.com(String)
+[DEBUG] [2021-05-22 13:33] <==    Updates: 1
+[DEBUG] [2021-05-22 13:34] testDataSource()
+[DEBUG] [2021-05-22 13:34] DataSource HikariDataSource (springHikariCP)
+[DEBUG] [2021-05-22 13:34] LoginTimeout 30
+[DEBUG] [2021-05-22 13:34] testOpenSession()
+[DEBUG] [2021-05-22 13:34] session org.apache.ibatis.session.defaults.DefaultSqlSession@7e75bf2d
+[DEBUG] [2021-05-22 13:34] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 13:34] ==> Parameters: 
+[TRACE] [2021-05-22 13:34] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 13:34] <==        Row: 1, test11@test.co.kr, angel777, 이민정, 2021-05-22 12:33:03.0
+[TRACE] [2021-05-22 13:34] <==        Row: 2, minruki512@gmail.com, angel777, Minjoung Lee, 2021-05-22 12:46:12.0
+[TRACE] [2021-05-22 13:34] <==        Row: 3, min@naver.com, angel777, lee, 2021-05-22 12:58:28.0
+[DEBUG] [2021-05-22 13:34] <==      Total: 3
+[DEBUG] [2021-05-22 13:34] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 13:34] ==> Parameters: min2@naver.com(String), 123123(String), testtest(String), null
+[DEBUG] [2021-05-22 13:34] <==    Updates: 1
+[DEBUG] [2021-05-22 13:34] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 13:34] ==> Parameters: min2@naver.com(String)
+[TRACE] [2021-05-22 13:34] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 13:34] <==        Row: 5, min2@naver.com, 123123, testtest, null
+[DEBUG] [2021-05-22 13:34] <==      Total: 1
+[DEBUG] [2021-05-22 13:34] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 13:34] ==> Parameters: 1111111(String), 123456(String), min2@naver.com(String)
+[DEBUG] [2021-05-22 13:34] <==    Updates: 1
+[DEBUG] [2021-05-22 13:34] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 13:34] ==> Parameters: min2@naver.com(String)
+[DEBUG] [2021-05-22 13:34] <==    Updates: 1
+[DEBUG] [2021-05-22 13:40] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 13:40] ==> Parameters: 
+[TRACE] [2021-05-22 13:40] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 13:40] <==        Row: 1, test11@test.co.kr, angel777, 이민정, 2021-05-22 12:33:03.0
+[TRACE] [2021-05-22 13:40] <==        Row: 2, minruki512@gmail.com, angel777, Minjoung Lee, 2021-05-22 12:46:12.0
+[TRACE] [2021-05-22 13:40] <==        Row: 3, min@naver.com, angel777, lee, 2021-05-22 12:58:28.0
+[DEBUG] [2021-05-22 13:40] <==      Total: 3
+[DEBUG] [2021-05-22 13:40] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 13:40] ==> Parameters: min2@naver.com(String), 123123(String), testtest(String), null
+[DEBUG] [2021-05-22 13:40] <==    Updates: 1
+[DEBUG] [2021-05-22 13:40] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 13:40] ==> Parameters: min2@naver.com(String)
+[TRACE] [2021-05-22 13:40] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 13:40] <==        Row: 6, min2@naver.com, 123123, testtest, null
+[DEBUG] [2021-05-22 13:40] <==      Total: 1
+[DEBUG] [2021-05-22 13:40] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 13:40] ==> Parameters: 1111111(String), 123456(String), min2@naver.com(String)
+[DEBUG] [2021-05-22 13:40] <==    Updates: 1
+[DEBUG] [2021-05-22 13:40] test05CountMember()
+[DEBUG] [2021-05-22 13:40] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 13:40] ==> Parameters: min2@naver.com(String)
+[DEBUG] [2021-05-22 13:40] <==    Updates: 1
+[DEBUG] [2021-05-22 13:41] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 13:41] ==> Parameters: 
+[TRACE] [2021-05-22 13:41] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 13:41] <==        Row: 1, test11@test.co.kr, angel777, 이민정, 2021-05-22 12:33:03.0
+[TRACE] [2021-05-22 13:41] <==        Row: 2, minruki512@gmail.com, angel777, Minjoung Lee, 2021-05-22 12:46:12.0
+[TRACE] [2021-05-22 13:41] <==        Row: 3, min@naver.com, angel777, lee, 2021-05-22 12:58:28.0
+[DEBUG] [2021-05-22 13:41] <==      Total: 3
+[DEBUG] [2021-05-22 13:41] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 13:41] ==> Parameters: min2@naver.com(String), 123123(String), testtest(String), null
+[DEBUG] [2021-05-22 13:41] <==    Updates: 1
+[DEBUG] [2021-05-22 13:41] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 13:41] ==> Parameters: min2@naver.com(String)
+[TRACE] [2021-05-22 13:41] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 13:41] <==        Row: 7, min2@naver.com, 123123, testtest, null
+[DEBUG] [2021-05-22 13:41] <==      Total: 1
+[DEBUG] [2021-05-22 13:41] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 13:41] ==> Parameters: 1111111(String), 123456(String), min2@naver.com(String)
+[DEBUG] [2021-05-22 13:41] <==    Updates: 1
+[DEBUG] [2021-05-22 13:41] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 13:41] ==> Parameters: min2@naver.com(String)
+[DEBUG] [2021-05-22 13:41] <==    Updates: 1
+[DEBUG] [2021-05-22 13:42] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 13:42] ==> Parameters: 
+[TRACE] [2021-05-22 13:42] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 13:42] <==        Row: 1, test11@test.co.kr, angel777, 이민정, 2021-05-22 12:33:03.0
+[TRACE] [2021-05-22 13:42] <==        Row: 2, minruki512@gmail.com, angel777, Minjoung Lee, 2021-05-22 12:46:12.0
+[TRACE] [2021-05-22 13:42] <==        Row: 3, min@naver.com, angel777, lee, 2021-05-22 12:58:28.0
+[DEBUG] [2021-05-22 13:42] <==      Total: 3
+[DEBUG] [2021-05-22 13:42] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 13:42] ==> Parameters: min2@naver.com(String), 123123(String), testtest(String), null
+[DEBUG] [2021-05-22 13:42] <==    Updates: 1
+[DEBUG] [2021-05-22 13:42] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 13:42] ==> Parameters: min2@naver.com(String)
+[TRACE] [2021-05-22 13:42] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 13:42] <==        Row: 8, min2@naver.com, 123123, testtest, null
+[DEBUG] [2021-05-22 13:42] <==      Total: 1
+[DEBUG] [2021-05-22 13:42] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 13:42] ==> Parameters: 1111111(String), 123456(String), min2@naver.com(String)
+[DEBUG] [2021-05-22 13:42] <==    Updates: 1
+[DEBUG] [2021-05-22 13:42] test05CountMember()
+[DEBUG] [2021-05-22 13:42] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 13:42] ==> Parameters: min2@naver.com(String)
+[DEBUG] [2021-05-22 13:42] <==    Updates: 1
+[DEBUG] [2021-05-22 13:43] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 13:43] ==> Parameters: 
+[TRACE] [2021-05-22 13:43] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 13:43] <==        Row: 1, test11@test.co.kr, angel777, 이민정, 2021-05-22 12:33:03.0
+[TRACE] [2021-05-22 13:43] <==        Row: 2, minruki512@gmail.com, angel777, Minjoung Lee, 2021-05-22 12:46:12.0
+[TRACE] [2021-05-22 13:43] <==        Row: 3, min@naver.com, angel777, lee, 2021-05-22 12:58:28.0
+[DEBUG] [2021-05-22 13:43] <==      Total: 3
+[DEBUG] [2021-05-22 13:43] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 13:43] ==> Parameters: min2@naver.com(String), 123123(String), testtest(String), null
+[DEBUG] [2021-05-22 13:43] <==    Updates: 1
+[DEBUG] [2021-05-22 13:43] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 13:43] ==> Parameters: min2@naver.com(String)
+[TRACE] [2021-05-22 13:43] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 13:43] <==        Row: 9, min2@naver.com, 123123, testtest, null
+[DEBUG] [2021-05-22 13:43] <==      Total: 1
+[DEBUG] [2021-05-22 13:43] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 13:43] ==> Parameters: 1111111(String), 123456(String), min2@naver.com(String)
+[DEBUG] [2021-05-22 13:43] <==    Updates: 1
+[DEBUG] [2021-05-22 13:43] test05CountMember()
+[DEBUG] [2021-05-22 13:43] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 13:43] ==> Parameters: min2@naver.com(String)
+[DEBUG] [2021-05-22 13:43] <==    Updates: 1
+[DEBUG] [2021-05-22 13:44] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 13:44] ==> Parameters: 
+[TRACE] [2021-05-22 13:44] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 13:44] <==        Row: 1, test11@test.co.kr, angel777, 이민정, 2021-05-22 12:33:03.0
+[TRACE] [2021-05-22 13:44] <==        Row: 2, minruki512@gmail.com, angel777, Minjoung Lee, 2021-05-22 12:46:12.0
+[TRACE] [2021-05-22 13:44] <==        Row: 3, min@naver.com, angel777, lee, 2021-05-22 12:58:28.0
+[DEBUG] [2021-05-22 13:44] <==      Total: 3
+[DEBUG] [2021-05-22 13:44] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 13:44] ==> Parameters: min2@naver.com(String), 123123(String), testtest(String), null
+[DEBUG] [2021-05-22 13:44] <==    Updates: 1
+[DEBUG] [2021-05-22 13:44] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 13:44] ==> Parameters: min2@naver.com(String)
+[TRACE] [2021-05-22 13:44] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 13:44] <==        Row: 10, min2@naver.com, 123123, testtest, null
+[DEBUG] [2021-05-22 13:44] <==      Total: 1
+[DEBUG] [2021-05-22 13:44] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 13:44] ==> Parameters: 1111111(String), 123456(String), min2@naver.com(String)
+[DEBUG] [2021-05-22 13:44] <==    Updates: 1
+[DEBUG] [2021-05-22 13:44] test05CountMember()
+[DEBUG] [2021-05-22 13:44] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 13:44] ==> Parameters: min2@naver.com(String)
+[DEBUG] [2021-05-22 13:44] <==    Updates: 1
+[DEBUG] [2021-05-22 13:44] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 13:44] ==> Parameters: 
+[TRACE] [2021-05-22 13:44] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 13:44] <==        Row: 1, test11@test.co.kr, angel777, 이민정, 2021-05-22 12:33:03.0
+[TRACE] [2021-05-22 13:44] <==        Row: 2, minruki512@gmail.com, angel777, Minjoung Lee, 2021-05-22 12:46:12.0
+[TRACE] [2021-05-22 13:44] <==        Row: 3, min@naver.com, angel777, lee, 2021-05-22 12:58:28.0
+[DEBUG] [2021-05-22 13:44] <==      Total: 3
+[DEBUG] [2021-05-22 13:45] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 13:45] ==> Parameters: min2@naver.com(String), 123123(String), testtest(String), null
+[DEBUG] [2021-05-22 13:45] <==    Updates: 1
+[DEBUG] [2021-05-22 13:45] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 13:45] ==> Parameters: min2@naver.com(String)
+[TRACE] [2021-05-22 13:45] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 13:45] <==        Row: 11, min2@naver.com, 123123, testtest, null
+[DEBUG] [2021-05-22 13:45] <==      Total: 1
+[DEBUG] [2021-05-22 13:45] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 13:45] ==> Parameters: 1111111(String), 123456(String), min2@naver.com(String)
+[DEBUG] [2021-05-22 13:45] <==    Updates: 1
+[DEBUG] [2021-05-22 13:45] test05CountMember()
+[DEBUG] [2021-05-22 13:45] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 13:45] ==> Parameters: min2@naver.com(String)
+[DEBUG] [2021-05-22 13:45] <==    Updates: 1
+[DEBUG] [2021-05-22 13:46] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 13:46] ==> Parameters: 
+[TRACE] [2021-05-22 13:46] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 13:46] <==        Row: 1, test11@test.co.kr, angel777, 이민정, 2021-05-22 12:33:03.0
+[TRACE] [2021-05-22 13:46] <==        Row: 2, minruki512@gmail.com, angel777, Minjoung Lee, 2021-05-22 12:46:12.0
+[TRACE] [2021-05-22 13:46] <==        Row: 3, min@naver.com, angel777, lee, 2021-05-22 12:58:28.0
+[DEBUG] [2021-05-22 13:46] <==      Total: 3
+[DEBUG] [2021-05-22 13:46] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 13:46] ==> Parameters: min2@naver.com(String), 123123(String), testtest(String), null
+[DEBUG] [2021-05-22 13:46] <==    Updates: 1
+[DEBUG] [2021-05-22 13:46] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 13:46] ==> Parameters: min2@naver.com(String)
+[TRACE] [2021-05-22 13:46] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 13:46] <==        Row: 12, min2@naver.com, 123123, testtest, null
+[DEBUG] [2021-05-22 13:46] <==      Total: 1
+[DEBUG] [2021-05-22 13:46] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 13:46] ==> Parameters: 1111111(String), 123456(String), min2@naver.com(String)
+[DEBUG] [2021-05-22 13:46] <==    Updates: 1
+[DEBUG] [2021-05-22 13:46] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 13:46] ==> Parameters: min2@naver.com(String)
+[DEBUG] [2021-05-22 13:46] <==    Updates: 1
+[DEBUG] [2021-05-22 13:46] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 13:46] ==> Parameters: 
+[TRACE] [2021-05-22 13:46] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 13:46] <==        Row: 1, test11@test.co.kr, angel777, 이민정, 2021-05-22 12:33:03.0
+[TRACE] [2021-05-22 13:46] <==        Row: 2, minruki512@gmail.com, angel777, Minjoung Lee, 2021-05-22 12:46:12.0
+[TRACE] [2021-05-22 13:46] <==        Row: 3, min@naver.com, angel777, lee, 2021-05-22 12:58:28.0
+[DEBUG] [2021-05-22 13:46] <==      Total: 3
+[DEBUG] [2021-05-22 13:46] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 13:46] ==> Parameters: min2@naver.com(String), 123123(String), testtest(String), null
+[DEBUG] [2021-05-22 13:46] <==    Updates: 1
+[DEBUG] [2021-05-22 13:46] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 13:46] ==> Parameters: min2@naver.com(String)
+[TRACE] [2021-05-22 13:46] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 13:46] <==        Row: 13, min2@naver.com, 123123, testtest, null
+[DEBUG] [2021-05-22 13:46] <==      Total: 1
+[DEBUG] [2021-05-22 13:46] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 13:46] ==> Parameters: 1111111(String), 123456(String), min2@naver.com(String)
+[DEBUG] [2021-05-22 13:46] <==    Updates: 1
+[DEBUG] [2021-05-22 13:46] test05CountMember()
+[DEBUG] [2021-05-22 13:46] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 13:46] ==> Parameters: min2@naver.com(String)
+[DEBUG] [2021-05-22 13:46] <==    Updates: 1
+[DEBUG] [2021-05-22 13:48] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 13:48] ==> Parameters: 
+[TRACE] [2021-05-22 13:48] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 13:48] <==        Row: 1, test11@test.co.kr, angel777, �̹���, 2021-05-22 12:33:03.0
+[TRACE] [2021-05-22 13:48] <==        Row: 2, minruki512@gmail.com, angel777, Minjoung Lee, 2021-05-22 12:46:12.0
+[TRACE] [2021-05-22 13:48] <==        Row: 3, min@naver.com, angel777, lee, 2021-05-22 12:58:28.0
+[DEBUG] [2021-05-22 13:48] <==      Total: 3
+[DEBUG] [2021-05-22 13:48] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 13:48] ==> Parameters: min2@naver.com(String), 123123(String), testtest(String), null
+[DEBUG] [2021-05-22 13:48] <==    Updates: 1
+[DEBUG] [2021-05-22 13:48] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 13:48] ==> Parameters: min2@naver.com(String)
+[TRACE] [2021-05-22 13:48] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 13:48] <==        Row: 14, min2@naver.com, 123123, testtest, null
+[DEBUG] [2021-05-22 13:48] <==      Total: 1
+[DEBUG] [2021-05-22 13:48] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 13:48] ==> Parameters: 1111111(String), 123456(String), min2@naver.com(String)
+[DEBUG] [2021-05-22 13:48] <==    Updates: 1
+[DEBUG] [2021-05-22 13:48] test05CountMember()
+[DEBUG] [2021-05-22 13:48] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 13:48] ==> Parameters: min2@naver.com(String)
+[DEBUG] [2021-05-22 13:48] <==    Updates: 1
+[DEBUG] [2021-05-22 13:51] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 13:51] ==> Parameters: 
+[TRACE] [2021-05-22 13:51] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 13:51] <==        Row: 1, test11@test.co.kr, angel777, 이민정, 2021-05-22 12:33:03.0
+[TRACE] [2021-05-22 13:51] <==        Row: 2, minruki512@gmail.com, angel777, Minjoung Lee, 2021-05-22 12:46:12.0
+[TRACE] [2021-05-22 13:51] <==        Row: 3, min@naver.com, angel777, lee, 2021-05-22 12:58:28.0
+[DEBUG] [2021-05-22 13:51] <==      Total: 3
+[DEBUG] [2021-05-22 13:51] Member id=1, email=test11@test.co.kr, password=angel777, name=이민정, registerDateTime=2021-05-22T12:33:03
+[DEBUG] [2021-05-22 13:51] Member id=2, email=minruki512@gmail.com, password=angel777, name=Minjoung Lee, registerDateTime=2021-05-22T12:46:12
+[DEBUG] [2021-05-22 13:51] Member id=3, email=min@naver.com, password=angel777, name=lee, registerDateTime=2021-05-22T12:58:28
+[DEBUG] [2021-05-22 13:51] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 13:51] ==> Parameters: min2@naver.com(String), 123123(String), testtest(String), null
+[DEBUG] [2021-05-22 13:51] <==    Updates: 1
+[DEBUG] [2021-05-22 13:51] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 13:51] ==> Parameters: min2@naver.com(String)
+[TRACE] [2021-05-22 13:51] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 13:51] <==        Row: 15, min2@naver.com, 123123, testtest, null
+[DEBUG] [2021-05-22 13:51] <==      Total: 1
+[DEBUG] [2021-05-22 13:51] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 13:51] ==> Parameters: 1111111(String), 123456(String), min2@naver.com(String)
+[DEBUG] [2021-05-22 13:51] <==    Updates: 1
+[DEBUG] [2021-05-22 13:51] test05CountMember()
+[DEBUG] [2021-05-22 13:51] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 13:51] ==> Parameters: min2@naver.com(String)
+[DEBUG] [2021-05-22 13:51] <==    Updates: 1
+[DEBUG] [2021-05-22 13:56] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 13:56] ==> Parameters: 
+[TRACE] [2021-05-22 13:56] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 13:56] <==        Row: 1, test11@test.co.kr, angel777, 이민정, 2021-05-22 12:33:03.0
+[TRACE] [2021-05-22 13:56] <==        Row: 2, minruki512@gmail.com, angel777, Minjoung Lee, 2021-05-22 12:46:12.0
+[TRACE] [2021-05-22 13:56] <==        Row: 3, min@naver.com, angel777, lee, 2021-05-22 12:58:28.0
+[DEBUG] [2021-05-22 13:56] <==      Total: 3
+[DEBUG] [2021-05-22 13:56] Member id=1, email=test11@test.co.kr, password=angel777, name=이민정, registerDateTime=2021-05-22T12:33:03
+[DEBUG] [2021-05-22 13:56] Member id=2, email=minruki512@gmail.com, password=angel777, name=Minjoung Lee, registerDateTime=2021-05-22T12:46:12
+[DEBUG] [2021-05-22 13:56] Member id=3, email=min@naver.com, password=angel777, name=lee, registerDateTime=2021-05-22T12:58:28
+[DEBUG] [2021-05-22 13:56] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 13:56] ==> Parameters: min2@naver.com(String), 123123(String), testtest(String), null
+[DEBUG] [2021-05-22 13:56] <==    Updates: 1
+[DEBUG] [2021-05-22 13:56] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 13:56] ==> Parameters: min2@naver.com(String)
+[TRACE] [2021-05-22 13:56] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 13:56] <==        Row: 16, min2@naver.com, 123123, testtest, null
+[DEBUG] [2021-05-22 13:56] <==      Total: 1
+[DEBUG] [2021-05-22 13:56] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 13:56] ==> Parameters: 1111111(String), 123456(String), min2@naver.com(String)
+[DEBUG] [2021-05-22 13:56] <==    Updates: 1
+[DEBUG] [2021-05-22 13:56] test05CountMember()
+[DEBUG] [2021-05-22 13:56] ==>  Preparing: select count(*) from member
+[DEBUG] [2021-05-22 13:56] ==> Parameters: 
+[TRACE] [2021-05-22 13:56] <==    Columns: count(*)
+[TRACE] [2021-05-22 13:56] <==        Row: 4
+[DEBUG] [2021-05-22 13:56] <==      Total: 1
+[DEBUG] [2021-05-22 13:56] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 13:56] ==> Parameters: min2@naver.com(String)
+[DEBUG] [2021-05-22 13:56] <==    Updates: 1
+[DEBUG] [2021-05-22 13:58] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 13:58] ==> Parameters: 
+[TRACE] [2021-05-22 13:58] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 13:58] <==        Row: 1, test11@test.co.kr, angel777, �̹���, 2021-05-22 12:33:03.0
+[TRACE] [2021-05-22 13:58] <==        Row: 2, minruki512@gmail.com, angel777, Minjoung Lee, 2021-05-22 12:46:12.0
+[TRACE] [2021-05-22 13:58] <==        Row: 3, min@naver.com, angel777, lee, 2021-05-22 12:58:28.0
+[DEBUG] [2021-05-22 13:58] <==      Total: 3
+[DEBUG] [2021-05-22 13:58] Member id=1, email=test11@test.co.kr, password=angel777, name=�̹���, registerDateTime=2021-05-22T12:33:03
+[DEBUG] [2021-05-22 13:58] Member id=2, email=minruki512@gmail.com, password=angel777, name=Minjoung Lee, registerDateTime=2021-05-22T12:46:12
+[DEBUG] [2021-05-22 13:58] Member id=3, email=min@naver.com, password=angel777, name=lee, registerDateTime=2021-05-22T12:58:28
+[DEBUG] [2021-05-22 13:58] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 13:58] ==> Parameters: min2@naver.com(String), 123123(String), testtest(String), null
+[DEBUG] [2021-05-22 13:58] <==    Updates: 1
+[DEBUG] [2021-05-22 13:58] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 13:58] ==> Parameters: min2@naver.com(String)
+[TRACE] [2021-05-22 13:58] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 13:58] <==        Row: 17, min2@naver.com, 123123, testtest, null
+[DEBUG] [2021-05-22 13:58] <==      Total: 1
+[DEBUG] [2021-05-22 13:58] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 13:58] ==> Parameters: 1111111(String), 123456(String), min2@naver.com(String)
+[DEBUG] [2021-05-22 13:58] <==    Updates: 1
+[DEBUG] [2021-05-22 13:58] test05CountMember()
+[DEBUG] [2021-05-22 13:58] ==>  Preparing: select count(*) from member
+[DEBUG] [2021-05-22 13:58] ==> Parameters: 
+[TRACE] [2021-05-22 13:58] <==    Columns: count(*)
+[TRACE] [2021-05-22 13:58] <==        Row: 4
+[DEBUG] [2021-05-22 13:58] <==      Total: 1
+[DEBUG] [2021-05-22 13:58] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 13:58] ==> Parameters: min2@naver.com(String)
+[DEBUG] [2021-05-22 13:58] <==    Updates: 1
+[DEBUG] [2021-05-22 13:59] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 13:59] ==> Parameters: 
+[TRACE] [2021-05-22 13:59] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 13:59] <==        Row: 1, test11@test.co.kr, angel777, �̹���, 2021-05-22 12:33:03.0
+[TRACE] [2021-05-22 13:59] <==        Row: 2, minruki512@gmail.com, angel777, Minjoung Lee, 2021-05-22 12:46:12.0
+[TRACE] [2021-05-22 13:59] <==        Row: 3, min@naver.com, angel777, lee, 2021-05-22 12:58:28.0
+[DEBUG] [2021-05-22 13:59] <==      Total: 3
+[DEBUG] [2021-05-22 13:59] Member id=1, email=test11@test.co.kr, password=angel777, name=�̹���, registerDateTime=2021-05-22T12:33:03
+[DEBUG] [2021-05-22 13:59] Member id=2, email=minruki512@gmail.com, password=angel777, name=Minjoung Lee, registerDateTime=2021-05-22T12:46:12
+[DEBUG] [2021-05-22 13:59] Member id=3, email=min@naver.com, password=angel777, name=lee, registerDateTime=2021-05-22T12:58:28
+[DEBUG] [2021-05-22 13:59] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 13:59] ==> Parameters: min2@naver.com(String), 123123(String), testtest(String), null
+[DEBUG] [2021-05-22 13:59] <==    Updates: 1
+[DEBUG] [2021-05-22 13:59] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 13:59] ==> Parameters: min2@naver.com(String)
+[TRACE] [2021-05-22 13:59] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 13:59] <==        Row: 18, min2@naver.com, 123123, testtest, null
+[DEBUG] [2021-05-22 13:59] <==      Total: 1
+[DEBUG] [2021-05-22 13:59] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 13:59] ==> Parameters: 1111111(String), 123456(String), min2@naver.com(String)
+[DEBUG] [2021-05-22 13:59] <==    Updates: 1
+[DEBUG] [2021-05-22 13:59] test05CountMember()
+[DEBUG] [2021-05-22 13:59] ==>  Preparing: select count(*) from member
+[DEBUG] [2021-05-22 13:59] ==> Parameters: 
+[TRACE] [2021-05-22 13:59] <==    Columns: count(*)
+[TRACE] [2021-05-22 13:59] <==        Row: 4
+[DEBUG] [2021-05-22 13:59] <==      Total: 1
+[DEBUG] [2021-05-22 13:59] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 13:59] ==> Parameters: min2@naver.com(String)
+[DEBUG] [2021-05-22 13:59] <==    Updates: 1
+[DEBUG] [2021-05-22 14:00] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 14:00] ==> Parameters: 
+[TRACE] [2021-05-22 14:00] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:00] <==        Row: 1, test11@test.co.kr, angel777, 이민정, 2021-05-22 12:33:03.0
+[TRACE] [2021-05-22 14:00] <==        Row: 2, minruki512@gmail.com, angel777, Minjoung Lee, 2021-05-22 12:46:12.0
+[TRACE] [2021-05-22 14:00] <==        Row: 3, min@naver.com, angel777, lee, 2021-05-22 12:58:28.0
+[DEBUG] [2021-05-22 14:00] <==      Total: 3
+[DEBUG] [2021-05-22 14:00] Member id=1, email=test11@test.co.kr, password=angel777, name=이민정, registerDateTime=2021-05-22T12:33:03
+[DEBUG] [2021-05-22 14:00] Member id=2, email=minruki512@gmail.com, password=angel777, name=Minjoung Lee, registerDateTime=2021-05-22T12:46:12
+[DEBUG] [2021-05-22 14:00] Member id=3, email=min@naver.com, password=angel777, name=lee, registerDateTime=2021-05-22T12:58:28
+[DEBUG] [2021-05-22 14:00] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 14:00] ==> Parameters: min2@naver.com(String), 123123(String), testtest(String), null
+[DEBUG] [2021-05-22 14:00] <==    Updates: 1
+[DEBUG] [2021-05-22 14:00] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 14:00] ==> Parameters: min2@naver.com(String)
+[TRACE] [2021-05-22 14:00] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:00] <==        Row: 19, min2@naver.com, 123123, testtest, null
+[DEBUG] [2021-05-22 14:00] <==      Total: 1
+[DEBUG] [2021-05-22 14:00] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 14:00] ==> Parameters: 1111111(String), 123456(String), min2@naver.com(String)
+[DEBUG] [2021-05-22 14:00] <==    Updates: 1
+[DEBUG] [2021-05-22 14:00] test05CountMember()
+[DEBUG] [2021-05-22 14:00] ==>  Preparing: select count(*) from member
+[DEBUG] [2021-05-22 14:00] ==> Parameters: 
+[TRACE] [2021-05-22 14:00] <==    Columns: count(*)
+[TRACE] [2021-05-22 14:00] <==        Row: 4
+[DEBUG] [2021-05-22 14:00] <==      Total: 1
+[DEBUG] [2021-05-22 14:00] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 14:00] ==> Parameters: min2@naver.com(String)
+[DEBUG] [2021-05-22 14:00] <==    Updates: 1
+[DEBUG] [2021-05-22 14:00] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 14:00] ==> Parameters: 
+[TRACE] [2021-05-22 14:00] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:00] <==        Row: 1, test11@test.co.kr, angel777, 이민정, 2021-05-22 12:33:03.0
+[TRACE] [2021-05-22 14:00] <==        Row: 2, minruki512@gmail.com, angel777, Minjoung Lee, 2021-05-22 12:46:12.0
+[TRACE] [2021-05-22 14:00] <==        Row: 3, min@naver.com, angel777, lee, 2021-05-22 12:58:28.0
+[DEBUG] [2021-05-22 14:00] <==      Total: 3
+[DEBUG] [2021-05-22 14:00] Member id=1, email=test11@test.co.kr, password=angel777, name=이민정, registerDateTime=2021-05-22T12:33:03
+[DEBUG] [2021-05-22 14:00] Member id=2, email=minruki512@gmail.com, password=angel777, name=Minjoung Lee, registerDateTime=2021-05-22T12:46:12
+[DEBUG] [2021-05-22 14:00] Member id=3, email=min@naver.com, password=angel777, name=lee, registerDateTime=2021-05-22T12:58:28
+[DEBUG] [2021-05-22 14:00] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 14:00] ==> Parameters: min2@naver.com(String), 123123(String), testtest(String), null
+[DEBUG] [2021-05-22 14:00] <==    Updates: 1
+[DEBUG] [2021-05-22 14:00] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 14:00] ==> Parameters: min2@naver.com(String)
+[TRACE] [2021-05-22 14:00] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:00] <==        Row: 20, min2@naver.com, 123123, testtest, null
+[DEBUG] [2021-05-22 14:00] <==      Total: 1
+[DEBUG] [2021-05-22 14:00] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 14:00] ==> Parameters: 1111111(String), 123456(String), min2@naver.com(String)
+[DEBUG] [2021-05-22 14:00] <==    Updates: 1
+[DEBUG] [2021-05-22 14:00] test05CountMember()
+[DEBUG] [2021-05-22 14:00] ==>  Preparing: select count(*) from member
+[DEBUG] [2021-05-22 14:00] ==> Parameters: 
+[TRACE] [2021-05-22 14:00] <==    Columns: count(*)
+[TRACE] [2021-05-22 14:00] <==        Row: 4
+[DEBUG] [2021-05-22 14:00] <==      Total: 1
+[DEBUG] [2021-05-22 14:00] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 14:00] ==> Parameters: min2@naver.com(String)
+[DEBUG] [2021-05-22 14:00] <==    Updates: 1
+[DEBUG] [2021-05-22 14:01] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 14:01] ==> Parameters: 
+[TRACE] [2021-05-22 14:01] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:01] <==        Row: 1, test11@test.co.kr, angel777, �̹���, 2021-05-22 12:33:03.0
+[TRACE] [2021-05-22 14:01] <==        Row: 2, minruki512@gmail.com, angel777, Minjoung Lee, 2021-05-22 12:46:12.0
+[TRACE] [2021-05-22 14:01] <==        Row: 3, min@naver.com, angel777, lee, 2021-05-22 12:58:28.0
+[DEBUG] [2021-05-22 14:01] <==      Total: 3
+[DEBUG] [2021-05-22 14:01] Member id=1, email=test11@test.co.kr, password=angel777, name=�̹���, registerDateTime=2021-05-22T12:33:03
+[DEBUG] [2021-05-22 14:01] Member id=2, email=minruki512@gmail.com, password=angel777, name=Minjoung Lee, registerDateTime=2021-05-22T12:46:12
+[DEBUG] [2021-05-22 14:01] Member id=3, email=min@naver.com, password=angel777, name=lee, registerDateTime=2021-05-22T12:58:28
+[DEBUG] [2021-05-22 14:01] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 14:01] ==> Parameters: min2@naver.com(String), 123123(String), testtest(String), null
+[DEBUG] [2021-05-22 14:01] <==    Updates: 1
+[DEBUG] [2021-05-22 14:01] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 14:01] ==> Parameters: min2@naver.com(String)
+[TRACE] [2021-05-22 14:01] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:01] <==        Row: 21, min2@naver.com, 123123, testtest, null
+[DEBUG] [2021-05-22 14:01] <==      Total: 1
+[DEBUG] [2021-05-22 14:01] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 14:01] ==> Parameters: 1111111(String), 123456(String), min2@naver.com(String)
+[DEBUG] [2021-05-22 14:01] <==    Updates: 1
+[DEBUG] [2021-05-22 14:01] test05CountMember()
+[DEBUG] [2021-05-22 14:01] ==>  Preparing: select count(*) from member
+[DEBUG] [2021-05-22 14:01] ==> Parameters: 
+[TRACE] [2021-05-22 14:01] <==    Columns: count(*)
+[TRACE] [2021-05-22 14:01] <==        Row: 4
+[DEBUG] [2021-05-22 14:01] <==      Total: 1
+[DEBUG] [2021-05-22 14:01] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 14:01] ==> Parameters: min2@naver.com(String)
+[DEBUG] [2021-05-22 14:01] <==    Updates: 1
+[DEBUG] [2021-05-22 14:04] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 14:04] ==> Parameters: 
+[TRACE] [2021-05-22 14:04] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:04] <==        Row: 1, test11@test.co.kr, angel777, 이민정, 2021-05-22 12:33:03.0
+[TRACE] [2021-05-22 14:04] <==        Row: 2, minruki512@gmail.com, angel777, Minjoung Lee, 2021-05-22 12:46:12.0
+[TRACE] [2021-05-22 14:04] <==        Row: 3, min@naver.com, angel777, lee, 2021-05-22 12:58:28.0
+[DEBUG] [2021-05-22 14:04] <==      Total: 3
+[DEBUG] [2021-05-22 14:04] Member id=1, email=test11@test.co.kr, password=angel777, name=이민정, registerDateTime=2021-05-22T12:33:03
+[DEBUG] [2021-05-22 14:04] Member id=2, email=minruki512@gmail.com, password=angel777, name=Minjoung Lee, registerDateTime=2021-05-22T12:46:12
+[DEBUG] [2021-05-22 14:04] Member id=3, email=min@naver.com, password=angel777, name=lee, registerDateTime=2021-05-22T12:58:28
+[DEBUG] [2021-05-22 14:04] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 14:04] ==> Parameters: min2@naver.com(String), 123123(String), testtest(String), null
+[DEBUG] [2021-05-22 14:04] <==    Updates: 1
+[DEBUG] [2021-05-22 14:04] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 14:04] ==> Parameters: min2@naver.com(String)
+[TRACE] [2021-05-22 14:04] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:04] <==        Row: 22, min2@naver.com, 123123, testtest, null
+[DEBUG] [2021-05-22 14:04] <==      Total: 1
+[DEBUG] [2021-05-22 14:04] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 14:04] ==> Parameters: 1111111(String), 123456(String), min2@naver.com(String)
+[DEBUG] [2021-05-22 14:04] <==    Updates: 1
+[DEBUG] [2021-05-22 14:04] test05CountMember()
+[DEBUG] [2021-05-22 14:04] ==>  Preparing: select count(*) from member
+[DEBUG] [2021-05-22 14:04] ==> Parameters: 
+[TRACE] [2021-05-22 14:04] <==    Columns: count(*)
+[TRACE] [2021-05-22 14:04] <==        Row: 4
+[DEBUG] [2021-05-22 14:04] <==      Total: 1
+[DEBUG] [2021-05-22 14:04] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 14:04] ==> Parameters: min2@naver.com(String)
+[DEBUG] [2021-05-22 14:04] <==    Updates: 1
+[DEBUG] [2021-05-22 14:09] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 14:09] ==> Parameters: 
+[TRACE] [2021-05-22 14:09] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:09] <==        Row: 1, test11@test.co.kr, angel777, 이민정, 2021-05-22 12:33:03.0
+[TRACE] [2021-05-22 14:09] <==        Row: 2, minruki512@gmail.com, angel777, Minjoung Lee, 2021-05-22 12:46:12.0
+[TRACE] [2021-05-22 14:09] <==        Row: 3, min@naver.com, angel777, lee, 2021-05-22 12:58:28.0
+[DEBUG] [2021-05-22 14:09] <==      Total: 3
+[DEBUG] [2021-05-22 14:09] Member id=1, email=test11@test.co.kr, password=angel777, name=이민정, registerDateTime=2021-05-22T12:33:03
+[DEBUG] [2021-05-22 14:09] Member id=2, email=minruki512@gmail.com, password=angel777, name=Minjoung Lee, registerDateTime=2021-05-22T12:46:12
+[DEBUG] [2021-05-22 14:09] Member id=3, email=min@naver.com, password=angel777, name=lee, registerDateTime=2021-05-22T12:58:28
+[DEBUG] [2021-05-22 14:09] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 14:09] ==> Parameters: min2@naver.com(String), 123123(String), testtest(String), null
+[DEBUG] [2021-05-22 14:09] <==    Updates: 1
+[DEBUG] [2021-05-22 14:09] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 14:09] ==> Parameters: min2@naver.com(String)
+[TRACE] [2021-05-22 14:09] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:09] <==        Row: 23, min2@naver.com, 123123, testtest, null
+[DEBUG] [2021-05-22 14:09] <==      Total: 1
+[DEBUG] [2021-05-22 14:09] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 14:09] ==> Parameters: 1111111(String), 123456(String), min2@naver.com(String)
+[DEBUG] [2021-05-22 14:09] <==    Updates: 1
+[DEBUG] [2021-05-22 14:09] test05CountMember()
+[DEBUG] [2021-05-22 14:09] ==>  Preparing: select count(*) from member
+[DEBUG] [2021-05-22 14:09] ==> Parameters: 
+[TRACE] [2021-05-22 14:09] <==    Columns: count(*)
+[TRACE] [2021-05-22 14:09] <==        Row: 4
+[DEBUG] [2021-05-22 14:09] <==      Total: 1
+[DEBUG] [2021-05-22 14:09] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 14:09] ==> Parameters: min2@naver.com(String)
+[DEBUG] [2021-05-22 14:09] <==    Updates: 1
+[DEBUG] [2021-05-22 14:09] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 14:09] ==> Parameters: 
+[TRACE] [2021-05-22 14:09] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:09] <==        Row: 1, test11@test.co.kr, angel777, 이민정, 2021-05-22 12:33:03.0
+[TRACE] [2021-05-22 14:09] <==        Row: 2, minruki512@gmail.com, angel777, Minjoung Lee, 2021-05-22 12:46:12.0
+[TRACE] [2021-05-22 14:09] <==        Row: 3, min@naver.com, angel777, lee, 2021-05-22 12:58:28.0
+[DEBUG] [2021-05-22 14:09] <==      Total: 3
+[DEBUG] [2021-05-22 14:09] Member id=1, email=test11@test.co.kr, password=angel777, name=이민정, registerDateTime=2021-05-22T12:33:03
+[DEBUG] [2021-05-22 14:09] Member id=2, email=minruki512@gmail.com, password=angel777, name=Minjoung Lee, registerDateTime=2021-05-22T12:46:12
+[DEBUG] [2021-05-22 14:09] Member id=3, email=min@naver.com, password=angel777, name=lee, registerDateTime=2021-05-22T12:58:28
+[DEBUG] [2021-05-22 14:09] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 14:09] ==> Parameters: min2@naver.com(String), 123123(String), testtest(String), null
+[DEBUG] [2021-05-22 14:09] <==    Updates: 1
+[DEBUG] [2021-05-22 14:09] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 14:09] ==> Parameters: min2@naver.com(String)
+[TRACE] [2021-05-22 14:09] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:09] <==        Row: 24, min2@naver.com, 123123, testtest, null
+[DEBUG] [2021-05-22 14:09] <==      Total: 1
+[DEBUG] [2021-05-22 14:09] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 14:09] ==> Parameters: 1111111(String), 123456(String), min2@naver.com(String)
+[DEBUG] [2021-05-22 14:09] <==    Updates: 1
+[DEBUG] [2021-05-22 14:09] test05CountMember()
+[DEBUG] [2021-05-22 14:09] ==>  Preparing: select count(*) from member
+[DEBUG] [2021-05-22 14:09] ==> Parameters: 
+[TRACE] [2021-05-22 14:09] <==    Columns: count(*)
+[TRACE] [2021-05-22 14:09] <==        Row: 4
+[DEBUG] [2021-05-22 14:09] <==      Total: 1
+[DEBUG] [2021-05-22 14:09] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 14:09] ==> Parameters: min2@naver.com(String)
+[DEBUG] [2021-05-22 14:09] <==    Updates: 1
+[DEBUG] [2021-05-22 14:13] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 14:13] ==> Parameters: 
+[TRACE] [2021-05-22 14:13] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:13] <==        Row: 1, test11@test.co.kr, angel777, 이민정, 2021-05-22 12:33:03.0
+[TRACE] [2021-05-22 14:13] <==        Row: 2, minruki512@gmail.com, angel777, Minjoung Lee, 2021-05-22 12:46:12.0
+[TRACE] [2021-05-22 14:13] <==        Row: 3, min@naver.com, angel777, lee, 2021-05-22 12:58:28.0
+[DEBUG] [2021-05-22 14:13] <==      Total: 3
+[DEBUG] [2021-05-22 14:13] Member id=1, email=test11@test.co.kr, password=angel777, name=이민정, registerDateTime=2021-05-22T12:33:03
+[DEBUG] [2021-05-22 14:13] Member id=2, email=minruki512@gmail.com, password=angel777, name=Minjoung Lee, registerDateTime=2021-05-22T12:46:12
+[DEBUG] [2021-05-22 14:13] Member id=3, email=min@naver.com, password=angel777, name=lee, registerDateTime=2021-05-22T12:58:28
+[DEBUG] [2021-05-22 14:13] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 14:13] ==> Parameters: min2@naver.com(String), 123123(String), testtest(String), null
+[DEBUG] [2021-05-22 14:13] <==    Updates: 1
+[DEBUG] [2021-05-22 14:13] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 14:13] ==> Parameters: min2@naver.com(String)
+[TRACE] [2021-05-22 14:13] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:13] <==        Row: 25, min2@naver.com, 123123, testtest, null
+[DEBUG] [2021-05-22 14:13] <==      Total: 1
+[DEBUG] [2021-05-22 14:13] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 14:13] ==> Parameters: 1111111(String), 123456(String), min2@naver.com(String)
+[DEBUG] [2021-05-22 14:13] <==    Updates: 1
+[DEBUG] [2021-05-22 14:13] test05CountMember()
+[DEBUG] [2021-05-22 14:13] ==>  Preparing: select count(*) from member
+[DEBUG] [2021-05-22 14:13] ==> Parameters: 
+[TRACE] [2021-05-22 14:13] <==    Columns: count(*)
+[TRACE] [2021-05-22 14:13] <==        Row: 4
+[DEBUG] [2021-05-22 14:13] <==      Total: 1
+[DEBUG] [2021-05-22 14:13] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 14:13] ==> Parameters: min2@naver.com(String)
+[DEBUG] [2021-05-22 14:13] <==    Updates: 1
+[DEBUG] [2021-05-22 14:15] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 14:15] ==> Parameters: 
+[TRACE] [2021-05-22 14:15] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:15] <==        Row: 1, test11@test.co.kr, angel777, 이민정, 2021-05-22 12:33:03.0
+[TRACE] [2021-05-22 14:15] <==        Row: 2, minruki512@gmail.com, angel777, Minjoung Lee, 2021-05-22 12:46:12.0
+[TRACE] [2021-05-22 14:15] <==        Row: 3, min@naver.com, angel777, lee, 2021-05-22 12:58:28.0
+[DEBUG] [2021-05-22 14:15] <==      Total: 3
+[DEBUG] [2021-05-22 14:15] Member id=1, email=test11@test.co.kr, password=angel777, name=이민정, registerDateTime=2021-05-22T12:33:03
+[DEBUG] [2021-05-22 14:15] Member id=2, email=minruki512@gmail.com, password=angel777, name=Minjoung Lee, registerDateTime=2021-05-22T12:46:12
+[DEBUG] [2021-05-22 14:15] Member id=3, email=min@naver.com, password=angel777, name=lee, registerDateTime=2021-05-22T12:58:28
+[DEBUG] [2021-05-22 14:15] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 14:15] ==> Parameters: min2@naver.com(String), 123123(String), testtest(String), null
+[DEBUG] [2021-05-22 14:15] <==    Updates: 1
+[DEBUG] [2021-05-22 14:15] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 14:15] ==> Parameters: min2@naver.com(String)
+[TRACE] [2021-05-22 14:15] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:15] <==        Row: 26, min2@naver.com, 123123, testtest, null
+[DEBUG] [2021-05-22 14:15] <==      Total: 1
+[DEBUG] [2021-05-22 14:15] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 14:15] ==> Parameters: 1111111(String), 123456(String), min2@naver.com(String)
+[DEBUG] [2021-05-22 14:15] <==    Updates: 1
+[DEBUG] [2021-05-22 14:15] test05CountMember()
+[DEBUG] [2021-05-22 14:15] ==>  Preparing: select count(*) from member
+[DEBUG] [2021-05-22 14:15] ==> Parameters: 
+[TRACE] [2021-05-22 14:15] <==    Columns: count(*)
+[TRACE] [2021-05-22 14:15] <==        Row: 4
+[DEBUG] [2021-05-22 14:15] <==      Total: 1
+[DEBUG] [2021-05-22 14:15] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 14:15] ==> Parameters: min2@naver.com(String)
+[DEBUG] [2021-05-22 14:15] <==    Updates: 1
+[DEBUG] [2021-05-22 14:16] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 14:16] ==> Parameters: 
+[TRACE] [2021-05-22 14:16] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:16] <==        Row: 1, test11@test.co.kr, angel777, 이민정, 2021-05-22 12:33:03.0
+[TRACE] [2021-05-22 14:16] <==        Row: 2, minruki512@gmail.com, angel777, Minjoung Lee, 2021-05-22 12:46:12.0
+[TRACE] [2021-05-22 14:16] <==        Row: 3, min@naver.com, angel777, lee, 2021-05-22 12:58:28.0
+[DEBUG] [2021-05-22 14:16] <==      Total: 3
+[DEBUG] [2021-05-22 14:16] Member id=1, email=test11@test.co.kr, password=angel777, name=이민정, registerDateTime=2021-05-22T12:33:03
+[DEBUG] [2021-05-22 14:16] Member id=2, email=minruki512@gmail.com, password=angel777, name=Minjoung Lee, registerDateTime=2021-05-22T12:46:12
+[DEBUG] [2021-05-22 14:16] Member id=3, email=min@naver.com, password=angel777, name=lee, registerDateTime=2021-05-22T12:58:28
+[DEBUG] [2021-05-22 14:16] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 14:16] ==> Parameters: min2@naver.com(String), 123123(String), testtest(String), null
+[DEBUG] [2021-05-22 14:16] <==    Updates: 1
+[DEBUG] [2021-05-22 14:16] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 14:16] ==> Parameters: min2@naver.com(String)
+[TRACE] [2021-05-22 14:16] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:16] <==        Row: 27, min2@naver.com, 123123, testtest, null
+[DEBUG] [2021-05-22 14:16] <==      Total: 1
+[DEBUG] [2021-05-22 14:16] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 14:16] ==> Parameters: 1111111(String), 123456(String), min2@naver.com(String)
+[DEBUG] [2021-05-22 14:16] <==    Updates: 1
+[DEBUG] [2021-05-22 14:16] test05CountMember()
+[DEBUG] [2021-05-22 14:16] ==>  Preparing: select count(*) from member
+[DEBUG] [2021-05-22 14:16] ==> Parameters: 
+[TRACE] [2021-05-22 14:16] <==    Columns: count(*)
+[TRACE] [2021-05-22 14:16] <==        Row: 4
+[DEBUG] [2021-05-22 14:16] <==      Total: 1
+[DEBUG] [2021-05-22 14:16] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 14:16] ==> Parameters: min2@naver.com(String)
+[DEBUG] [2021-05-22 14:16] <==    Updates: 1
+[DEBUG] [2021-05-22 14:29] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 14:29] ==> Parameters: 
+[TRACE] [2021-05-22 14:29] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:29] <==        Row: 1, test11@test.co.kr, angel777, 이민정, 2021-05-22 12:33:03.0
+[TRACE] [2021-05-22 14:29] <==        Row: 2, minruki512@gmail.com, angel777, Minjoung Lee, 2021-05-22 12:46:12.0
+[TRACE] [2021-05-22 14:29] <==        Row: 3, min@naver.com, angel777, lee, 2021-05-22 12:58:28.0
+[DEBUG] [2021-05-22 14:29] <==      Total: 3
+[DEBUG] [2021-05-22 14:29] Member id=1, email=test11@test.co.kr, password=angel777, name=이민정, registerDateTime=2021-05-22T12:33:03
+[DEBUG] [2021-05-22 14:29] Member id=2, email=minruki512@gmail.com, password=angel777, name=Minjoung Lee, registerDateTime=2021-05-22T12:46:12
+[DEBUG] [2021-05-22 14:29] Member id=3, email=min@naver.com, password=angel777, name=lee, registerDateTime=2021-05-22T12:58:28
+[DEBUG] [2021-05-22 14:29] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 14:29] ==> Parameters: min2@naver.com(String), 123123(String), testtest(String), null
+[DEBUG] [2021-05-22 14:29] <==    Updates: 1
+[DEBUG] [2021-05-22 14:29] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 14:29] ==> Parameters: min2@naver.com(String)
+[TRACE] [2021-05-22 14:29] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:29] <==        Row: 28, min2@naver.com, 123123, testtest, null
+[DEBUG] [2021-05-22 14:29] <==      Total: 1
+[DEBUG] [2021-05-22 14:29] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 14:29] ==> Parameters: 1111111(String), 123456(String), min2@naver.com(String)
+[DEBUG] [2021-05-22 14:29] <==    Updates: 1
+[DEBUG] [2021-05-22 14:29] test05CountMember()
+[DEBUG] [2021-05-22 14:29] ==>  Preparing: select count(*) from member
+[DEBUG] [2021-05-22 14:29] ==> Parameters: 
+[TRACE] [2021-05-22 14:29] <==    Columns: count(*)
+[TRACE] [2021-05-22 14:29] <==        Row: 4
+[DEBUG] [2021-05-22 14:29] <==      Total: 1
+[DEBUG] [2021-05-22 14:29] cnt >> 4
+[DEBUG] [2021-05-22 14:29] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 14:29] ==> Parameters: min2@naver.com(String)
+[DEBUG] [2021-05-22 14:29] <==    Updates: 1
+[DEBUG] [2021-05-22 14:30] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 14:30] ==> Parameters: 
+[TRACE] [2021-05-22 14:30] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:30] <==        Row: 1, test11@test.co.kr, angel777, �̹���, 2021-05-22 12:33:03.0
+[TRACE] [2021-05-22 14:30] <==        Row: 2, minruki512@gmail.com, angel777, Minjoung Lee, 2021-05-22 12:46:12.0
+[TRACE] [2021-05-22 14:30] <==        Row: 3, min@naver.com, angel777, lee, 2021-05-22 12:58:28.0
+[DEBUG] [2021-05-22 14:30] <==      Total: 3
+[DEBUG] [2021-05-22 14:30] Member id=1, email=test11@test.co.kr, password=angel777, name=�̹���, registerDateTime=2021-05-22T12:33:03
+[DEBUG] [2021-05-22 14:30] Member id=2, email=minruki512@gmail.com, password=angel777, name=Minjoung Lee, registerDateTime=2021-05-22T12:46:12
+[DEBUG] [2021-05-22 14:30] Member id=3, email=min@naver.com, password=angel777, name=lee, registerDateTime=2021-05-22T12:58:28
+[DEBUG] [2021-05-22 14:30] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 14:30] ==> Parameters: min2@naver.com(String), 123123(String), testtest(String), null
+[DEBUG] [2021-05-22 14:30] <==    Updates: 1
+[DEBUG] [2021-05-22 14:30] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 14:30] ==> Parameters: min2@naver.com(String)
+[TRACE] [2021-05-22 14:30] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:30] <==        Row: 29, min2@naver.com, 123123, testtest, null
+[DEBUG] [2021-05-22 14:30] <==      Total: 1
+[DEBUG] [2021-05-22 14:30] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 14:30] ==> Parameters: 1111111(String), 123456(String), min2@naver.com(String)
+[DEBUG] [2021-05-22 14:30] <==    Updates: 1
+[DEBUG] [2021-05-22 14:30] test05CountMember()
+[DEBUG] [2021-05-22 14:30] ==>  Preparing: select count(*) from member
+[DEBUG] [2021-05-22 14:30] ==> Parameters: 
+[TRACE] [2021-05-22 14:30] <==    Columns: count(*)
+[TRACE] [2021-05-22 14:30] <==        Row: 4
+[DEBUG] [2021-05-22 14:30] <==      Total: 1
+[DEBUG] [2021-05-22 14:30] cnt >> 4
+[DEBUG] [2021-05-22 14:30] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 14:30] ==> Parameters: min2@naver.com(String)
+[DEBUG] [2021-05-22 14:30] <==    Updates: 1
+[DEBUG] [2021-05-22 14:31] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 14:31] ==> Parameters: 
+[TRACE] [2021-05-22 14:31] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:31] <==        Row: 1, test11@test.co.kr, angel777, 이민정, 2021-05-22 12:33:03.0
+[TRACE] [2021-05-22 14:31] <==        Row: 2, minruki512@gmail.com, angel777, Minjoung Lee, 2021-05-22 12:46:12.0
+[TRACE] [2021-05-22 14:31] <==        Row: 3, min@naver.com, angel777, lee, 2021-05-22 12:58:28.0
+[DEBUG] [2021-05-22 14:31] <==      Total: 3
+[DEBUG] [2021-05-22 14:31] Member id=1, email=test11@test.co.kr, password=angel777, name=이민정, registerDateTime=2021-05-22T12:33:03
+[DEBUG] [2021-05-22 14:31] Member id=2, email=minruki512@gmail.com, password=angel777, name=Minjoung Lee, registerDateTime=2021-05-22T12:46:12
+[DEBUG] [2021-05-22 14:31] Member id=3, email=min@naver.com, password=angel777, name=lee, registerDateTime=2021-05-22T12:58:28
+[DEBUG] [2021-05-22 14:31] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 14:31] ==> Parameters: min2@naver.com(String), 123123(String), testtest(String), null
+[DEBUG] [2021-05-22 14:31] <==    Updates: 1
+[DEBUG] [2021-05-22 14:31] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 14:31] ==> Parameters: min2@naver.com(String)
+[TRACE] [2021-05-22 14:31] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:31] <==        Row: 30, min2@naver.com, 123123, testtest, null
+[DEBUG] [2021-05-22 14:31] <==      Total: 1
+[DEBUG] [2021-05-22 14:31] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 14:31] ==> Parameters: 1111111(String), 123456(String), min2@naver.com(String)
+[DEBUG] [2021-05-22 14:31] <==    Updates: 1
+[DEBUG] [2021-05-22 14:31] test05CountMember()
+[DEBUG] [2021-05-22 14:31] ==>  Preparing: select count(*) from member
+[DEBUG] [2021-05-22 14:31] ==> Parameters: 
+[TRACE] [2021-05-22 14:31] <==    Columns: count(*)
+[TRACE] [2021-05-22 14:31] <==        Row: 4
+[DEBUG] [2021-05-22 14:31] <==      Total: 1
+[DEBUG] [2021-05-22 14:31] cnt >> 4
+[DEBUG] [2021-05-22 14:31] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 14:31] ==> Parameters: min2@naver.com(String)
+[DEBUG] [2021-05-22 14:31] <==    Updates: 1
+[DEBUG] [2021-05-22 14:33] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 14:33] ==> Parameters: 
+[TRACE] [2021-05-22 14:33] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:33] <==        Row: 1, test11@test.co.kr, angel777, 이민정, 2021-05-22 12:33:03.0
+[TRACE] [2021-05-22 14:33] <==        Row: 2, minruki512@gmail.com, angel777, Minjoung Lee, 2021-05-22 12:46:12.0
+[TRACE] [2021-05-22 14:33] <==        Row: 3, min@naver.com, angel777, lee, 2021-05-22 12:58:28.0
+[DEBUG] [2021-05-22 14:33] <==      Total: 3
+[DEBUG] [2021-05-22 14:33] Member id=1, email=test11@test.co.kr, password=angel777, name=이민정, registerDateTime=2021-05-22T12:33:03
+[DEBUG] [2021-05-22 14:33] Member id=2, email=minruki512@gmail.com, password=angel777, name=Minjoung Lee, registerDateTime=2021-05-22T12:46:12
+[DEBUG] [2021-05-22 14:33] Member id=3, email=min@naver.com, password=angel777, name=lee, registerDateTime=2021-05-22T12:58:28
+[DEBUG] [2021-05-22 14:33] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 14:33] ==> Parameters: min2@naver.com(String), 123123(String), testtest(String), null
+[DEBUG] [2021-05-22 14:33] <==    Updates: 1
+[DEBUG] [2021-05-22 14:33] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 14:33] ==> Parameters: min2@naver.com(String)
+[TRACE] [2021-05-22 14:33] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:33] <==        Row: 31, min2@naver.com, 123123, testtest, null
+[DEBUG] [2021-05-22 14:33] <==      Total: 1
+[DEBUG] [2021-05-22 14:33] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 14:33] ==> Parameters: 1111111(String), 123456(String), min2@naver.com(String)
+[DEBUG] [2021-05-22 14:33] <==    Updates: 1
+[DEBUG] [2021-05-22 14:33] test05CountMember()
+[DEBUG] [2021-05-22 14:33] ==>  Preparing: select count(*) from member
+[DEBUG] [2021-05-22 14:33] ==> Parameters: 
+[TRACE] [2021-05-22 14:33] <==    Columns: count(*)
+[TRACE] [2021-05-22 14:33] <==        Row: 4
+[DEBUG] [2021-05-22 14:33] <==      Total: 1
+[DEBUG] [2021-05-22 14:33] cnt >> 4
+[DEBUG] [2021-05-22 14:33] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 14:33] ==> Parameters: min2@naver.com(String)
+[DEBUG] [2021-05-22 14:33] <==    Updates: 1
+[DEBUG] [2021-05-22 14:34] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 14:34] ==> Parameters: 
+[TRACE] [2021-05-22 14:34] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:34] <==        Row: 1, test11@test.co.kr, angel777, 이민정, 2021-05-22 12:33:03.0
+[TRACE] [2021-05-22 14:34] <==        Row: 2, minruki512@gmail.com, angel777, Minjoung Lee, 2021-05-22 12:46:12.0
+[TRACE] [2021-05-22 14:34] <==        Row: 3, min@naver.com, angel777, lee, 2021-05-22 12:58:28.0
+[DEBUG] [2021-05-22 14:34] <==      Total: 3
+[DEBUG] [2021-05-22 14:34] Member id=1, email=test11@test.co.kr, password=angel777, name=이민정, registerDateTime=2021-05-22T12:33:03
+[DEBUG] [2021-05-22 14:34] Member id=2, email=minruki512@gmail.com, password=angel777, name=Minjoung Lee, registerDateTime=2021-05-22T12:46:12
+[DEBUG] [2021-05-22 14:34] Member id=3, email=min@naver.com, password=angel777, name=lee, registerDateTime=2021-05-22T12:58:28
+[DEBUG] [2021-05-22 14:34] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 14:34] ==> Parameters: min2@naver.com(String), 123123(String), testtest(String), null
+[DEBUG] [2021-05-22 14:34] <==    Updates: 1
+[DEBUG] [2021-05-22 14:34] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 14:34] ==> Parameters: min2@naver.com(String)
+[TRACE] [2021-05-22 14:34] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:34] <==        Row: 32, min2@naver.com, 123123, testtest, null
+[DEBUG] [2021-05-22 14:34] <==      Total: 1
+[DEBUG] [2021-05-22 14:34] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 14:34] ==> Parameters: 1111111(String), 123456(String), min2@naver.com(String)
+[DEBUG] [2021-05-22 14:34] <==    Updates: 1
+[DEBUG] [2021-05-22 14:34] test05CountMember()
+[DEBUG] [2021-05-22 14:34] ==>  Preparing: select count(*) from member
+[DEBUG] [2021-05-22 14:34] ==> Parameters: 
+[TRACE] [2021-05-22 14:34] <==    Columns: count(*)
+[TRACE] [2021-05-22 14:34] <==        Row: 4
+[DEBUG] [2021-05-22 14:34] <==      Total: 1
+[DEBUG] [2021-05-22 14:34] cnt >> 4
+[DEBUG] [2021-05-22 14:34] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 14:34] ==> Parameters: min2@naver.com(String)
+[DEBUG] [2021-05-22 14:34] <==    Updates: 1
+[DEBUG] [2021-05-22 14:34] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 14:34] ==> Parameters: 
+[TRACE] [2021-05-22 14:34] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:34] <==        Row: 1, test11@test.co.kr, angel777, 이민정, 2021-05-22 12:33:03.0
+[TRACE] [2021-05-22 14:34] <==        Row: 2, minruki512@gmail.com, angel777, Minjoung Lee, 2021-05-22 12:46:12.0
+[TRACE] [2021-05-22 14:34] <==        Row: 3, min@naver.com, angel777, lee, 2021-05-22 12:58:28.0
+[DEBUG] [2021-05-22 14:34] <==      Total: 3
+[DEBUG] [2021-05-22 14:34] Member id=1, email=test11@test.co.kr, password=angel777, name=이민정, registerDateTime=2021-05-22T12:33:03
+[DEBUG] [2021-05-22 14:34] Member id=2, email=minruki512@gmail.com, password=angel777, name=Minjoung Lee, registerDateTime=2021-05-22T12:46:12
+[DEBUG] [2021-05-22 14:34] Member id=3, email=min@naver.com, password=angel777, name=lee, registerDateTime=2021-05-22T12:58:28
+[DEBUG] [2021-05-22 14:34] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 14:34] ==> Parameters: min2@naver.com(String), 123123(String), testtest(String), null
+[DEBUG] [2021-05-22 14:34] <==    Updates: 1
+[DEBUG] [2021-05-22 14:34] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 14:34] ==> Parameters: min2@naver.com(String)
+[TRACE] [2021-05-22 14:34] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:34] <==        Row: 33, min2@naver.com, 123123, testtest, null
+[DEBUG] [2021-05-22 14:34] <==      Total: 1
+[DEBUG] [2021-05-22 14:34] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 14:34] ==> Parameters: 1111111(String), 123456(String), min2@naver.com(String)
+[DEBUG] [2021-05-22 14:34] <==    Updates: 1
+[DEBUG] [2021-05-22 14:34] test05CountMember()
+[DEBUG] [2021-05-22 14:34] ==>  Preparing: select count(*) from member
+[DEBUG] [2021-05-22 14:34] ==> Parameters: 
+[TRACE] [2021-05-22 14:34] <==    Columns: count(*)
+[TRACE] [2021-05-22 14:34] <==        Row: 4
+[DEBUG] [2021-05-22 14:34] <==      Total: 1
+[DEBUG] [2021-05-22 14:34] cnt >> 4
+[DEBUG] [2021-05-22 14:34] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 14:34] ==> Parameters: min2@naver.com(String)
+[DEBUG] [2021-05-22 14:34] <==    Updates: 1
+[DEBUG] [2021-05-22 14:44] testDataSource()
+[DEBUG] [2021-05-22 14:44] DataSource HikariDataSource (springHikariCP)
+[DEBUG] [2021-05-22 14:44] LoginTimeout 30
+[DEBUG] [2021-05-22 14:45] testOpenSession()
+[DEBUG] [2021-05-22 14:45] session org.apache.ibatis.session.defaults.DefaultSqlSession@7e75bf2d
+[DEBUG] [2021-05-22 14:45] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 14:45] ==> Parameters: 
+[TRACE] [2021-05-22 14:45] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:45] <==        Row: 1, test11@test.co.kr, angel777, 이민정, 2021-05-22 12:33:03.0
+[TRACE] [2021-05-22 14:45] <==        Row: 2, minruki512@gmail.com, angel777, Minjoung Lee, 2021-05-22 12:46:12.0
+[TRACE] [2021-05-22 14:45] <==        Row: 3, min@naver.com, angel777, lee, 2021-05-22 12:58:28.0
+[TRACE] [2021-05-22 14:45] <==        Row: 34, rukiminangel12234@naver.com, angel777, Minjoung Lee, 2021-05-22 14:44:32.0
+[DEBUG] [2021-05-22 14:45] <==      Total: 4
+[DEBUG] [2021-05-22 14:45] Member id=1, email=test11@test.co.kr, password=angel777, name=이민정, registerDateTime=2021-05-22T12:33:03
+[DEBUG] [2021-05-22 14:45] Member id=2, email=minruki512@gmail.com, password=angel777, name=Minjoung Lee, registerDateTime=2021-05-22T12:46:12
+[DEBUG] [2021-05-22 14:45] Member id=3, email=min@naver.com, password=angel777, name=lee, registerDateTime=2021-05-22T12:58:28
+[DEBUG] [2021-05-22 14:45] Member id=34, email=rukiminangel12234@naver.com, password=angel777, name=Minjoung Lee, registerDateTime=2021-05-22T14:44:32
+[DEBUG] [2021-05-22 14:45] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 14:45] ==> Parameters: min2@naver.com(String), 123123(String), testtest(String), null
+[DEBUG] [2021-05-22 14:45] <==    Updates: 1
+[DEBUG] [2021-05-22 14:45] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 14:45] ==> Parameters: min2@naver.com(String)
+[TRACE] [2021-05-22 14:45] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:45] <==        Row: 35, min2@naver.com, 123123, testtest, null
+[DEBUG] [2021-05-22 14:45] <==      Total: 1
+[DEBUG] [2021-05-22 14:45] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 14:45] ==> Parameters: 1111111(String), 123456(String), min2@naver.com(String)
+[DEBUG] [2021-05-22 14:45] <==    Updates: 1
+[DEBUG] [2021-05-22 14:45] test05CountMember()
+[DEBUG] [2021-05-22 14:45] ==>  Preparing: select count(*) from member
+[DEBUG] [2021-05-22 14:45] ==> Parameters: 
+[TRACE] [2021-05-22 14:45] <==    Columns: count(*)
+[TRACE] [2021-05-22 14:45] <==        Row: 5
+[DEBUG] [2021-05-22 14:45] <==      Total: 1
+[DEBUG] [2021-05-22 14:45] cnt >> 5
+[DEBUG] [2021-05-22 14:45] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 14:45] ==> Parameters: min2@naver.com(String)
+[DEBUG] [2021-05-22 14:45] <==    Updates: 1

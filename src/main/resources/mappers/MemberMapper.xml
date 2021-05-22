@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="spring5_webmvc2_mybatis_study.mapper.MemberMapper">
+
+	<resultMap type="Member" id="ResMember">
+		<id property="id" column="id"/>
+		<result property="email" column="email"/>
+		<result property="name" column="name"/>
+		<result property="password" column="password"/>
+		<result property="registerDateTime" column="regdate"/>
+	</resultMap>
+
+	<sql id="selectSQL">
+		select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+	</sql>
+
+	<sql id="whereSQL">
+		<where>
+			<if test="email != null">
+				and email = #{email}
+			</if>
+		</where>
+	</sql>
+	
+	<select id="selectAll" resultMap="ResMember">
+		<include refid="selectSQL"/>
+	</select>
+	
+	<!-- 결과가 1행 이상인 경우 -->
+	<select id="selectByEmail" parameterType="String" resultMap="ResMember">
+		<include refid="selectSQL"/>
+		<include refid="whereSQL"></include>
+	</select>
+	
+ 	
+	<select id="countMember" parameterType="int" resultType="int">
+		select count(*) from member
+	</select>
+	
+	<insert id="insertMember" parameterType="Member">
+		insert into member (email, PASSWORD,name,REGDATE) 
+		values(#{email},#{password},#{name},#{registerDateTime})
+	</insert>
+	
+	<delete id="deleteMember" parameterType="Member">
+		delete 
+		  from member 
+		<include refid="whereSQL"></include>
+	</delete>
+	
+	<update id="updateMember" parameterType="Member">
+		update member 
+			  set name = #{name}, password = #{password} where email = #{email}
+	</update>
+</mapper>
