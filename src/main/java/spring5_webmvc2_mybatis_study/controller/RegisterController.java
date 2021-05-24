@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import spring5_webmvc2_mybatis_study.dto.RegisterRequest;
-import spring5_webmvc2_mybatis_study.exception.DuplicateMemberException;
+import spring5_webmvc2_mybatis_study.exception.DupulicateMemberException;
 import spring5_webmvc2_mybatis_study.service.MemberRegisterService;
 
 @Controller
@@ -53,7 +53,7 @@ public class RegisterController {
 		try {
 			memberRegisterService.regist(regReq);
 			return "register/step3";
-		} catch (DuplicateMemberException e) {
+		} catch (DupulicateMemberException e) {
 			errors.rejectValue("email", "duplicate");
 			return "register/step2";
 		}

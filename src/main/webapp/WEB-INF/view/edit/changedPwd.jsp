@@ -6,14 +6,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title><spring:message code="login.title"/></title>
+<title><spring:message code = "change.pwd.title" /></title>
 </head>
 <body>
 	<p>
-		<spring:message code="login.done"/>
+		<spring:message code="change.pwd.done"/>
 	</p>
 	<p>
-		<a href="<c:url value = '/main' />">
+		<a href="<c:url value = '/main'/>">
 			[<spring:message code="go.main"/>]
 		</a>
 	</p>

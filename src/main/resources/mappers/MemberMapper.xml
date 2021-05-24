@@ -32,7 +32,6 @@
 		<include refid="whereSQL"></include>
 	</select>
 	
- 	
 	<select id="countMember" parameterType="int" resultType="int">
 		select count(*) from member
 	</select>
@@ -49,7 +48,13 @@
 	</delete>
 	
 	<update id="updateMember" parameterType="Member">
-		update member 
-			  set name = #{name}, password = #{password} where email = #{email}
+		update member
+		<set>
+			<if test="name != null">name = #{name},</if>
+			<if test="password != null">password = #{password},</if>
+			<if test="email != null">email = #{email},</if>
+		</set>
+			<include refid="whereSQL"></include>
+			 <!-- where email = #{email} -->
 	</update>
 </mapper>

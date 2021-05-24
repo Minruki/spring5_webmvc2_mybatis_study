@@ -24,13 +24,13 @@
 		</p>
 		<p>
 			<label><spring:message code="password"/>: <br> 
-			<form:input path="password" />
+			<form:password path="password" />
 			<form:errors path="password" />
 			</label>
 		</p>
 		<p>
 			<label><spring:message code="password.confirm"/>: <br> 
-			<form:input path="confirmPassword" />
+			<form:password path="confirmPassword" />
 			<form:errors path="confirmPassword" />
 			</label>
 		</p>
