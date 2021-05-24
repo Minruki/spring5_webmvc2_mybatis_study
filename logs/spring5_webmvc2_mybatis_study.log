@@ -850,3 +850,41 @@
 [DEBUG] [2021-05-22 14:45] ==>  Preparing: delete from member WHERE email = ?
 [DEBUG] [2021-05-22 14:45] ==> Parameters: min2@naver.com(String)
 [DEBUG] [2021-05-22 14:45] <==    Updates: 1
+[DEBUG] [2021-05-22 14:48] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+[DEBUG] [2021-05-22 14:48] ==> Parameters: 
+[TRACE] [2021-05-22 14:48] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:48] <==        Row: 1, test11@test.co.kr, angel777, ÀÌ¹ÎÁ¤, 2021-05-22 12:33:03.0
+[TRACE] [2021-05-22 14:48] <==        Row: 2, minruki512@gmail.com, angel777, Minjoung Lee, 2021-05-22 12:46:12.0
+[TRACE] [2021-05-22 14:48] <==        Row: 3, min@naver.com, angel777, lee, 2021-05-22 12:58:28.0
+[TRACE] [2021-05-22 14:48] <==        Row: 34, rukiminangel12234@naver.com, angel777, Minjoung Lee, 2021-05-22 14:44:32.0
+[DEBUG] [2021-05-22 14:48] <==      Total: 4
+[DEBUG] [2021-05-22 14:48] Member id=1, email=test11@test.co.kr, password=angel777, name=ÀÌ¹ÎÁ¤, registerDateTime=2021-05-22T12:33:03
+[DEBUG] [2021-05-22 14:48] Member id=2, email=minruki512@gmail.com, password=angel777, name=Minjoung Lee, registerDateTime=2021-05-22T12:46:12
+[DEBUG] [2021-05-22 14:48] Member id=3, email=min@naver.com, password=angel777, name=lee, registerDateTime=2021-05-22T12:58:28
+[DEBUG] [2021-05-22 14:48] Member id=34, email=rukiminangel12234@naver.com, password=angel777, name=Minjoung Lee, registerDateTime=2021-05-22T14:44:32
+[DEBUG] [2021-05-22 14:48] ==>  Preparing: insert into member (email, PASSWORD,name,REGDATE) values(?,?,?,?)
+[DEBUG] [2021-05-22 14:48] ==> Parameters: min2@naver.com(String), 123123(String), testtest(String), null
+[DEBUG] [2021-05-22 14:48] <==    Updates: 1
+[DEBUG] [2021-05-22 14:48] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member WHERE email = ?
+[DEBUG] [2021-05-22 14:48] ==> Parameters: min2@naver.com(String)
+[TRACE] [2021-05-22 14:48] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-22 14:48] <==        Row: 36, min2@naver.com, 123123, testtest, null
+[DEBUG] [2021-05-22 14:48] <==      Total: 1
+[DEBUG] [2021-05-22 14:48] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-22 14:48] ==> Parameters: 1111111(String), 123456(String), min2@naver.com(String)
+[DEBUG] [2021-05-22 14:48] <==    Updates: 1
+[DEBUG] [2021-05-22 14:48] test05CountMember()
+[DEBUG] [2021-05-22 14:48] ==>  Preparing: select count(*) from member
+[DEBUG] [2021-05-22 14:48] ==> Parameters: 
+[TRACE] [2021-05-22 14:48] <==    Columns: count(*)
+[TRACE] [2021-05-22 14:48] <==        Row: 5
+[DEBUG] [2021-05-22 14:48] <==      Total: 1
+[DEBUG] [2021-05-22 14:48] cnt >> 5
+[DEBUG] [2021-05-22 14:48] ==>  Preparing: delete from member WHERE email = ?
+[DEBUG] [2021-05-22 14:48] ==> Parameters: min2@naver.com(String)
+[DEBUG] [2021-05-22 14:48] <==    Updates: 1
+[DEBUG] [2021-05-22 17:02] testDataSource()
+[DEBUG] [2021-05-22 17:02] DataSource HikariDataSource (springHikariCP)
+[DEBUG] [2021-05-22 17:02] LoginTimeout 30
+[DEBUG] [2021-05-22 17:02] testOpenSession()
+[DEBUG] [2021-05-22 17:02] session org.apache.ibatis.session.defaults.DefaultSqlSession@7e75bf2d
